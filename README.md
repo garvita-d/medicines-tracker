@@ -1,70 +1,157 @@
-# Getting Started with Create React App
+# 💊 Medicine Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, intuitive web application to help you track and manage your daily medications with reminders, calendar integration, and voice assistance.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **📅 Daily Medicine Scheduling**: Organize medications by time slots (Morning, Afternoon, Evening, Night)
+- **⏰ Smart Reminders**: Get timely notifications for your medication schedule
+- **🗓️ Calendar Integration**: Export your medicine schedule to Google Calendar or Apple Calendar
+- **📊 History Tracking**: View your medication history and track compliance
+- **🎤 Voice Assistant**: Use voice commands to manage your medicines
+- **📱 Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **💾 Local Storage**: All data is stored locally in your browser for privacy
 
-### `npm start`
+## 🚀 Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+   git clone https://github.com/garvita-d/medicines-tracker.git
+   cd medicines-tracker
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+   npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+   npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ Built With
 
-### `npm run eject`
+- **React** - Frontend framework
+- **CSS3** - Styling and animations
+- **Local Storage API** - Data persistence
+- **Notification API** - Browser notifications
+- **Web Speech API** - Voice assistance (if implemented)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
+```
+medicine-tracker/
+├── public/
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── TimeSlot.jsx
+│   │   ├── MedicineItem.jsx
+│   │   ├── CalendarModal.jsx
+│   │   ├── CalendarExportModal.jsx
+│   │   ├── HistoryModal.jsx
+│   │   └── Notification.jsx
+│   ├── styles/
+│   │   └── App.css
+│   ├── utils/
+│   │   ├── storage.js
+│   │   ├── reminderService.js
+│   │   ├── medicineData.js
+│   │   └── voiceAssistant.js
+│   ├── App.jsx
+│   └── index.jsx
+├── package.json
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎯 Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Adding a Medicine
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Click on the "+" button in any time slot
+2. Enter medicine name and dosage
+3. Set reminder time
+4. Click "Add Medicine"
 
-## Learn More
+### Managing Medicines
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Edit**: Click the edit icon to modify medicine details
+- **Delete**: Click the delete icon to remove a medicine
+- **Mark as Taken**: Check the box when you've taken your medicine
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Calendar Export
 
-### Code Splitting
+1. Click the "Export to Calendar" button
+2. Choose your calendar service (Google Calendar or Apple Calendar)
+3. Follow the instructions to import the schedule
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### View History
 
-### Analyzing the Bundle Size
+- Click the "History" button to see your medication compliance record
+- Track which medicines you've taken and when
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔔 Browser Permissions
 
-### Making a Progressive Web App
+The app may request the following permissions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Notifications**: To send medicine reminders
+- **Microphone** (optional): For voice assistant features
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Deployemnt done using Netlify
+   - By going to [Netlify](https://netlify.com)
+   - Click "Add new site" → "Import an existing project"
+   - Choose "GitHub"
+   - Select your `medicines-tracker` repository
+   - Click "Deploy site"
 
-### Deployment
+## 🛠️ Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Garvita Dalmia**
+
+- GitHub: [@garvita-d](https://github.com/garvita-d)
+
+## 🙏 Acknowledgments
+
+- Icons and design inspiration from modern UI/UX patterns
+- React community for excellent documentation and resources
+
+## 📧 Contact
+
+For questions or feedback, please open an issue on GitHub.
+
+---
+
+⭐ If you find this project helpful, please consider giving it a star!
