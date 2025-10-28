@@ -108,14 +108,6 @@ The app may request the following permissions:
 - **Notifications**: To send medicine reminders
 - **Microphone** (optional): For voice assistant features
 
-
-## Deployemnt done using Netlify
-   - By going to [Netlify](https://netlify.com)
-   - Click "Add new site" → "Import an existing project"
-   - Choose "GitHub"
-   - Select your `medicines-tracker` repository
-   - Click "Deploy site"
-
 ## 🛠️ Available Scripts
 
 - `npm start` - Runs the app in development mode
