@@ -2,6 +2,13 @@
 
 A modern, intuitive web application to help you track and manage your daily medications with reminders, calendar integration, and voice assistance.
 
+## 🚀 Deployment
+
+This project is live on Netlify:  
+👉 [**View Live Site**](https://stately-kashata-5a6a78.netlify.app)
+
+---
+
 ## ✨ Features
 
 - **📅 Daily Medicine Scheduling**: Organize medications by time slots (Morning, Afternoon, Evening, Night)
@@ -38,6 +45,18 @@ A modern, intuitive web application to help you track and manage your daily medi
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5.  `npm run build`
+Builds the app for production to the `build` folder.  
+The build is minified and optimized for best performance.
+
+---
+## 🌐 Deployment Steps (Summary)
+
+1. Run `npm run build` to create a production build.
+2. Deployed manually to **Netlify** via drag & drop of the `build/` folder.
+3. (Optional) Connected GitHub repo for automatic deployments:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `build`
 
 ## 🏗️ Built With
 
