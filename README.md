@@ -45,6 +45,7 @@ This project is live on Netlify:
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
 5.  `npm run build`
 Builds the app for production to the `build` folder.  
 The build is minified and optimized for best performance.
@@ -58,13 +59,78 @@ The build is minified and optimized for best performance.
    - **Build command:** `npm run build`
    - **Publish directory:** `build`
 
-## 🏗️ Built With
+## 🛠️ Tech Stack
 
-- **React** - Frontend framework
-- **CSS3** - Styling and animations
-- **Local Storage API** - Data persistence
-- **Notification API** - Browser notifications
-- **Web Speech API** - Voice assistance (if implemented)
+### **Frontend Framework**
+- **React 18** — Component-based UI library with Hooks  
+- **React DOM** — DOM rendering for React applications
+
+---
+
+### **UI & Styling**
+- **CSS3** — Modern styling with Flexbox, Grid, animations, and gradients  
+- **Responsive Design** — Mobile-first approach with media queries  
+- **CSS Animations** — Keyframe animations and transitions  
+- **Backdrop Filter** — Glassmorphism effects
+
+---
+
+### **Icons & Assets**
+- **Lucide React** (v0.263.1) — Beautiful, customizable icon library
+
+---
+
+### **State Management**
+- **React Hooks** — `useState`, `useEffect` for local state management  
+- **LocalStorage API** — Client-side data persistence
+
+---
+
+### **Browser APIs**
+- **Web Storage API** (LocalStorage) — Data persistence across sessions  
+- **Web Notifications API** — Browser push notifications  
+- **Web Audio API** — Notification sound effects  
+- **Web Speech API** *(planned)* — Voice recognition  
+- **Clipboard API** — Copy reminder details
+
+---
+
+### **Calendar Integration**
+- **Google Calendar API** — Direct calendar event creation via URL parameters  
+- **Outlook Web Integration** — Outlook calendar event creation  
+- **ICS Format Support** — Universal calendar file format
+
+---
+
+### **Build Tools & Development**
+- **Create React App** — Zero-config build setup  
+- **Webpack** — Module bundler (via CRA)  
+- **Babel** — JavaScript transpiler (via CRA)  
+- **ES6+** — Modern JavaScript features
+
+---
+
+### **Version Control & Deployment**
+- **Git** — Version control system  
+- **GitHub** — Code repository and collaboration  
+- **Netlify** — Continuous deployment and hosting  
+- **PWA Support** — Progressive Web App capabilities
+
+---
+
+### **Code Quality**
+- **ESLint** — JavaScript linting  
+- **React Developer Tools** — Browser extension for debugging
+
+---
+
+### **Performance Optimization**
+- **Code Splitting** — Dynamic imports for faster load times  
+- **Lazy Loading** — On-demand component loading  
+- **Memoization** — Performance optimization with `React.memo`
+
+---
+
 
 ## 📂 Project Structure
 ```
